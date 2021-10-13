@@ -57,9 +57,8 @@ void cripto(LinkedList &lista, int M){
 
 // em progresso
 void decripto(LinkedList &cripto, int M){
-    int aux = M * 2;
     while(!cripto.vazia()){
-        for (int i = 0; i < aux; i++){
+        for (int i = 0; i < M*2; i++){
 			cripto.insere(cripto.remove());
         }
         cout << cripto.remove();
